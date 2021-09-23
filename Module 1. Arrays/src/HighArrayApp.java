@@ -42,6 +42,5 @@ public class HighArrayApp {
         arr.display();
         System.out.println("Jumlah Elemen : " + arr.size());
         
-
     }
 }

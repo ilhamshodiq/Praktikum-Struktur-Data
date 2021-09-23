@@ -20,10 +20,7 @@ public class HighArray {
         }
         // mengisi value input dengan posisi index yang sesuai
         arr[cariindex] = value;
-        nElemen++;// nElemen bertambah
-        
-        // arr[nElemen] = value;
-        // nElemen++;
+        nElemen++;// nElemen bertambah      
     }
 
     public boolean find(int key) {
