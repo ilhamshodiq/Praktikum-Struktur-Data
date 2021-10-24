@@ -1,4 +1,4 @@
-import java.util.Stack;
+// import java.util.Stack;
 
 public class Tree {
     private Node root;
@@ -213,7 +213,7 @@ public class Tree {
                 System.out.print(' ');
             }
             while (globalStack.isEmpty() == false) {
-                Node temp = (Node) globalStack.pop();
+                Node temp = (Node) globalStack.pop();                
                 if (temp != null) {
                     System.out.print(temp.id);
                     localStack.push(temp.leftChild);

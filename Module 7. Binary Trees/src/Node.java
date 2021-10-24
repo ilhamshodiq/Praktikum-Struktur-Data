@@ -4,6 +4,10 @@ public class Node {
     public Node leftChild;
     public Node rightChild;
 
+    //buat stack
+    public Node next;
+    public Node item;
+
     public void displayNode() {
         System.out.print("{ " + id + ", " + data + " } ");
     }
