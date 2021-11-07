@@ -46,7 +46,7 @@ public class HashTable {
 
     public Data delete(int key) {
         int hashVal = hashFunc(key);
-        int i = 0;
+        int i = 1;
         while (hashArray[hashVal] != null) {
             if (hashArray[hashVal].getKey() == key) {
                 Data temp = hashArray[hashVal];
@@ -55,19 +55,21 @@ public class HashTable {
             }
             hashVal += f(i);
             hashVal %= size;
+            i++;
         }
         return null;
     }
 
     public Data find(int key) {
         int hashVal = hashFunc(key);
-        int i = 0;
+        int i = 1;
         while (hashArray[hashVal] != null) {
             if (hashArray[hashVal].getKey() == key) {
                 return hashArray[hashVal];
             }
             hashVal += f(i);
             hashVal %= size;
+            i++;
         }
         return null;
     }
